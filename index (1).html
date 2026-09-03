@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kaylin Ngo (Ngo Hoang Khanh Linh) - campaign marketer working across IMC, content, PR, events and e-commerce. Selected work, case by case.">
+<meta property="og:title" content="Kaylin Ngo - Campaign Marketer">
+<meta property="og:description" content="Campaign marketer connecting strategy, storytelling, and execution. Six campaigns, start to finish.">
+<meta property="og:type" content="website">
+<title>Kaylin Ngo — Campaign Marketer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ink:      #14140F;
+    --ink-80:   #26251D;
+    --ink-line: #4A473C;
+    --cream:    #F7F4EC;
+    --white:    #FFFFFF;
+    --gold:     #C9A24B;
+    --gold-dim: #A78235;
+    --body:     #3A362C;
+    --muted:    #6B6858;
+    --faint:    #8A8676;
+    --line:     #E0DBCB;
+    --on-ink:   #D8D5C8;
+    --on-ink-2: #B8B4A5;
+
+    --display: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+    --pad: clamp(1.25rem, 5vw, 4.5rem);
+    --maxw: 76rem;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--body);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body.locked { overflow: hidden; }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; }
+
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  .shell { max-width: var(--maxw); margin: 0 auto; padding-left: var(--pad); padding-right: var(--pad); }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin: 0;
+  }
+
+  .on-dark .eyebrow, .ink .eyebrow { color: var(--gold); }
+
+  h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: -0.01em; margin: 0; }
+
+  /* ---------------- nav ---------------- */
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: var(--ink);
+    color: var(--cream);
+    border-bottom: 1px solid var(--ink-line);
+  }
+
+  .nav-in {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0.85rem var(--pad);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav-name {
+    font-family: var(--display);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links { display: flex; gap: 1.35rem; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+  .nav-links a { text-decoration: none; color: var(--on-ink-2); transition: color 0.15s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a.cta { color: var(--gold); }
+
+  @media (max-width: 34rem) { .nav-links a:not(.cta) { display: none; } }
+
+  /* ---------------- hero ---------------- */
+
+  .hero { background: var(--ink); color: var(--cream); }
+
+  .hero-in {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(3rem, 9vw, 6.5rem) var(--pad) clamp(3.25rem, 9vw, 6rem);
+    display: grid;
+    gap: clamp(1.6rem, 4vw, 3.5rem);
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    align-items: end;
+  }
+
+  @media (max-width: 54rem) { .hero-in { grid-template-columns: 1fr; align-items: start; } }
+
+  h1 {
+    font-size: clamp(2.6rem, 8.5vw, 5.2rem);
+    line-height: 0.94;
+    margin: 1rem 0 0.9rem;
+    text-wrap: balance;
+  }
+
+  .tagline {
+    color: var(--gold);
+    font-size: clamp(0.95rem, 2vw, 1.12rem);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 1.1rem;
+  }
+
+  .hero p.lede { color: var(--on-ink); font-size: 1.02rem; max-width: 34em; margin: 0 0 1.9rem; }
+
+  .btns { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+  .btn {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.85rem 1.5rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+
+  .btn-gold { background: var(--gold); color: var(--ink); }
+  .btn-gold:hover { background: var(--cream); }
+  .btn-ghost { border-color: var(--ink-line); color: var(--cream); }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-facts {
+    border-left: 1px solid var(--ink-line);
+    padding-left: clamp(1rem, 2.5vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+  }
+
+  @media (max-width: 54rem) { .hero-facts { border-left: none; border-top: 1px solid var(--ink-line); padding: 1.6rem 0 0; flex-direction: row; flex-wrap: wrap; gap: 1.5rem 2.5rem; } }
+
+  .fact-n { font-family: var(--display); font-size: 1.7rem; color: var(--gold); line-height: 1; }
+  .fact-l { font-size: 0.76rem; color: var(--on-ink-2); letter-spacing: 0.04em; margin-top: 0.3rem; max-width: 15em; }
+
+  /* ---------------- sections ---------------- */
+
+  section { padding: clamp(3rem, 7vw, 5.5rem) 0; }
+
+  .sec-head { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: clamp(1.5rem, 3.5vw, 2.5rem); }
+  .sec-head h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); color: var(--ink); }
+  .sec-head .hint { font-size: 0.85rem; color: var(--faint); }
+
+  /* ---------------- work grid ---------------- */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    text-align: left;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+  }
+
+  .card:hover, .card:focus-visible {
+    border-color: var(--ink);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -18px rgba(20, 20, 15, 0.55);
+  }
+
+  .card-shot { aspect-ratio: 16 / 10; background: #EDE8DA; overflow: hidden; position: relative; }
+  .card-shot img { width: 100%; height: 100%; object-fit: cover; }
+  .card-shot.logo { display: flex; align-items: center; justify-content: center; padding: 7%; }
+  .card-shot.logo img { width: 100%; height: 100%; object-fit: contain; }
+
+  .card-body { padding: 1rem 1.15rem 1.25rem; display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
+  .card-body h3 { font-size: 1.05rem; color: var(--ink); line-height: 1.2; }
+  .card-desc { font-size: 0.88rem; color: var(--muted); margin: 0; }
+  .card-more { margin-top: auto; padding-top: 0.6rem; font-size: 0.73rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-dim); }
+
+  /* typographic card for the case with no imagery */
+  .card-shot.type-only {
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .card-shot.type-only span {
+    font-family: var(--display);
+    color: var(--gold);
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  /* ---------------- image slots ---------------- */
+
+  .frame { position: relative; background: #EDE8DA; }
+  .on-dark .frame { background: var(--ink-80); }
+
+  .shot.missing .frame img { display: none; }
+  .shot.missing .frame::after {
+    content: "ADD  " attr(data-file);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--faint);
+    border: 1px dashed var(--line);
+    white-space: pre-wrap;
+  }
+  .on-dark .shot.missing .frame::after { color: var(--on-ink-2); border-color: var(--ink-line); }
+  .shot.missing .frame { aspect-ratio: 16 / 10; }
+
+  .card-shot.missing img { display: none; }
+  .card-shot.missing::after {
+    content: "ADD  " attr(data-file);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    color: var(--faint);
+    border-bottom: 1px dashed var(--line);
+  }
+
+  /* ---------------- modal ---------------- */
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: rgba(20, 20, 15, 0.86);
+    display: none;
+    padding: clamp(0.5rem, 3vw, 2.5rem);
+    overflow-y: auto;
+  }
+  .overlay.open { display: block; }
+
+  .modal {
+    background: var(--ink);
+    color: var(--cream);
+    max-width: 58rem;
+    margin: 0 auto;
+    border: 1px solid var(--ink-line);
+  }
+
+  .modal-bar {
+    position: sticky;
+    top: 0;
+    background: var(--ink);
+    border-bottom: 1px solid var(--ink-line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem clamp(1.1rem, 3vw, 2.25rem);
+    z-index: 2;
+  }
+
+  .modal-bar .who { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+
+  .x {
+    background: none;
+    border: 1px solid var(--ink-line);
+    color: var(--cream);
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.45rem 0.85rem;
+    cursor: pointer;
+  }
+  .x:hover { border-color: var(--gold); color: var(--gold); }
+
+  .modal-in { padding: clamp(1.4rem, 4vw, 2.75rem) clamp(1.1rem, 3vw, 2.25rem) clamp(2rem, 5vw, 3rem); }
+
+  .modal-in h2 { font-size: clamp(1.7rem, 5vw, 2.6rem); line-height: 1.02; color: var(--cream); margin-bottom: 0.75rem; }
+  .modal-in .quote { font-size: 1.02rem; color: var(--gold); margin: 0 0 1.4rem; max-width: 32em; }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+    font-size: 0.72rem;
+    color: var(--on-ink-2);
+    border-top: 1px solid var(--ink-line);
+    border-bottom: 1px solid var(--ink-line);
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.75rem; }
+  .tag { border: 1px solid var(--ink-line); color: var(--gold); font-size: 0.7rem; padding: 0.32rem 0.7rem; letter-spacing: 0.03em; }
+
+  .lab { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin: 0 0 0.45rem; }
+  .modal-in p.txt { color: var(--on-ink); font-size: 0.96rem; margin: 0 0 1.5rem; max-width: 40em; }
+  .modal-in ul { color: var(--on-ink); font-size: 0.96rem; margin: 0 0 1.5rem; padding-left: 1.1rem; max-width: 40em; display: flex; flex-direction: column; gap: 0.25rem; }
+
+  .impact { border-top: 1px solid var(--ink-line); padding-top: 1.4rem; margin-bottom: 1.9rem; }
+  .impact-n { font-family: var(--display); font-size: clamp(2rem, 6vw, 3rem); color: var(--gold); line-height: 1; margin-bottom: 0.55rem; }
+  .impact p { color: var(--on-ink); font-size: 0.96rem; margin: 0; max-width: 40em; }
+
+  .signoff { font-family: var(--display); font-size: 1rem; color: var(--cream); margin: 0 0 2rem; }
+
+  .ev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1.1rem;
+    margin-top: 0.75rem;
+  }
+
+  .video-frame { aspect-ratio: 16 / 9; background: var(--ink-80); border: 1px solid var(--ink-line); }
+  .video-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+  .album-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .album-grid img:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+  .album-grid img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1 / 1; }
+  .shot.missing .album-grid { display: none; }
+
+  .shot { margin: 0; }
+  .shot .frame img { width: 100%; height: auto; }
+  .shot figcaption { font-size: 0.78rem; color: var(--on-ink-2); margin-top: 0.5rem; line-height: 1.5; }
+  .shot figcaption b { color: var(--cream); font-weight: 600; }
+
+  .links { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 1.25rem; font-size: 0.85rem; }
+  .links a { color: var(--gold); }
+
+  /* live-page preview cards */
+  .site-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+    gap: 1.1rem;
+    margin-top: 0.75rem;
+  }
+
+  .sitecard {
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--ink-line);
+    background: var(--ink-80);
+    transition: border-color 0.15s;
+  }
+  .sitecard:hover, .sitecard:focus-visible { border-color: var(--gold); }
+
+  .chrome {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid var(--ink-line);
+  }
+  .dots { display: flex; gap: 4px; flex: 0 0 auto; }
+  .dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-line); display: block; }
+  .url {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.62rem;
+    color: var(--on-ink-2);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .sitecard:hover .url { color: var(--gold); }
+  .go { font-size: 0.7rem; color: var(--gold); flex: 0 0 auto; }
+
+  /* ---------------- about ---------------- */
+
+  .about-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); }
+  @media (max-width: 50rem) { .about-grid { grid-template-columns: 1fr; } }
+
+  .about-grid p { font-size: 1.02rem; margin: 0 0 1.1rem; max-width: 36em; }
+
+  .about-side { display: flex; flex-direction: column; gap: 1.5rem; }
+  .portrait { margin: 0; }
+  .portrait .frame { aspect-ratio: 4 / 3; overflow: hidden; }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .portrait.missing .frame img { display: none; }
+
+  .cred { border-left: 2px solid var(--gold); padding-left: 1.1rem; display: flex; flex-direction: column; gap: 1rem; }
+  .cred dt { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
+  .cred dd { margin: 0.15rem 0 0; font-size: 0.92rem; color: var(--ink); }
+  .cred dd span { display: block; color: var(--muted); font-size: 0.86rem; }
+
+  /* ---------------- method ---------------- */
+
+  .method { background: var(--ink); color: var(--cream); }
+  .method .sec-head h2 { color: var(--cream); }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: clamp(1.25rem, 3vw, 2.25rem); }
+  .step { border-top: 1px solid var(--ink-line); padding-top: 1rem; }
+  .step .n { font-family: var(--display); color: var(--gold); font-size: 0.95rem; }
+  .step h3 { font-size: 1rem; color: var(--cream); margin: 0.5rem 0 0.4rem; line-height: 1.25; }
+  .step p { font-size: 0.88rem; color: var(--on-ink-2); margin: 0; }
+
+  /* ---------------- skills ---------------- */
+
+  .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.4rem 2rem; }
+  .skill-grid dt { font-family: var(--display); font-size: 0.85rem; color: var(--ink); letter-spacing: 0.01em; }
+  .skill-grid dd { margin: 0.4rem 0 0; font-size: 0.88rem; color: var(--muted); }
+
+  /* ---------------- contact ---------------- */
+
+  .contact { background: var(--ink); color: var(--cream); }
+  .contact h2 { font-size: clamp(1.7rem, 5vw, 2.6rem); color: var(--cream); max-width: 16em; line-height: 1.05; }
+  .contact p.lede { color: var(--on-ink); margin: 1rem 0 2rem; max-width: 34em; }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1.5rem; border-top: 1px solid var(--ink-line); padding-top: 1.6rem; margin-top: 2.4rem; }
+  .contact-grid dt { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+  .contact-grid dd { margin: 0.35rem 0 0; font-size: 0.95rem; }
+  .contact-grid a { color: var(--cream); }
+
+  footer { background: var(--ink); color: var(--faint); font-size: 0.75rem; border-top: 1px solid var(--ink-line); }
+  footer .shell { padding-top: 1.5rem; padding-bottom: 2rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="nav-in">
+    <div class="nav-name">KAYLIN NGO</div>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="assets/Kaylin-Ngo-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="eyebrow">Campaign Marketer · IMC · Integrated Campaigns</p>
+      <h1>KAYLIN NGO</h1>
+      <p class="tagline">Strategically told. Technically sold.</p>
+      <p class="lede">Campaign marketer connecting strategy, storytelling, and execution to move ideas from concept to market. Open to Campaign Marketer roles in Hanoi and Singapore.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="#work">View work</a>
+        <a class="btn btn-ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="hero-facts">
+      <div>
+        <div class="fact-n">250+</div>
+        <div class="fact-l">leads for an AI product with zero paid media</div>
+      </div>
+      <div>
+        <div class="fact-n">64%</div>
+        <div class="fact-l">of a 30-seat B2B event's room converted into pipeline</div>
+      </div>
+      <div>
+        <div class="fact-n">319.7K</div>
+        <div class="fact-l">organic views in 28 days, 79.2% non-followers</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="shell">
+    <div class="sec-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>SIX CAMPAIGNS, START TO FINISH</h2>
+      <p class="hint">Click a case to see the problem, the plan, the proof.</p>
+    </div>
+
+    <div class="grid" id="cards"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="shell">
+    <div class="sec-head">
+      <p class="eyebrow">About me</p>
+      <h2>EARNING BELIEF BEFORE ADOPTION</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>My work starts wherever something new needs to earn belief before it earns adoption. That might be an AI product enterprise buyers don't fully trust yet, a family tea brand entering online retail for the first time, an event format executives haven't experienced before, or technical standards a business audience finds unfamiliar.</p>
+        <p>3 years in, the job hasn't changed: translate the unfamiliar into something clear enough, and credible enough, for people to say yes.</p>
+      </div>
+      <div class="about-side">
+        <figure class="portrait">
+          <div class="frame" data-file="assets/about-portrait.jpg">
+            <img src="assets/about-portrait.jpg" alt="Kaylin Ngo" loading="lazy">
+          </div>
+        </figure>
+      <dl class="cred">
+        <div>
+          <dt>Education</dt>
+          <dd>Swinburne University of Technology<span>Media and Communication, Public Relations · Dec 2025</span></dd>
+        </div>
+        <div>
+          <dt>Publication</dt>
+          <dd>Co-author<span>A qualitative study on social media addiction and the expression of the true self among Vietnamese youth</span></dd>
+        </div>
+        <div>
+          <dt>Languages</dt>
+          <dd>Vietnamese — Native<span>English — Full Professional</span></dd>
+        </div>
+        <div>
+          <dt>Based in</dt>
+          <dd>Hanoi, Vietnam<span>Open to Hanoi and Singapore</span></dd>
+        </div>
+      </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="shell">
+    <div class="sec-head">
+      <p class="eyebrow">How I work</p>
+      <h2>FOUR STEPS, EVERY CAMPAIGN</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>Find what is holding people back</h3>
+        <p>I start with the audience, the business objective, and the point where people lose interest, confidence, or motivation to act.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>Build the story around that</h3>
+        <p>What needs to be understood first, what needs to be believed, and what evidence makes the next step feel easier.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>Connect the touchpoints</h3>
+        <p>Content, social, events, PR, landing pages, e-commerce, and follow-up systems all supporting the same campaign idea.</p>
+      </div>
+      <div class="step">
+        <div class="n">04</div>
+        <h3>Measure what moves</h3>
+        <p>I track what happened, find where the journey can improve, and refine on evidence rather than assumptions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    <div class="sec-head">
+      <p class="eyebrow">Skills</p>
+      <h2>WHAT I BRING</h2>
+    </div>
+    <dl class="skill-grid">
+      <div>
+        <dt>Campaign Strategy</dt>
+        <dd>IMC · Campaign Planning · Audience Journey · Integrated Campaigns · Brand Storytelling</dd>
+      </div>
+      <div>
+        <dt>Content and Communications</dt>
+        <dd>Content Strategy · Copywriting · Social Media · PR · Thought Leadership</dd>
+      </div>
+      <div>
+        <dt>Experiential Marketing</dt>
+        <dd>Event Planning · Event Operations · B2B Events · Activations · Guest Journey Design</dd>
+      </div>
+      <div>
+        <dt>Growth and Analytics</dt>
+        <dd>Lead Generation · Organic Growth · E-commerce · Marketing Analytics</dd>
+      </div>
+      <div>
+        <dt>Tools</dt>
+        <dd>Google Analytics · Looker Studio · Canva · Adobe Photoshop · Premiere Pro · Make.com · WordPress</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="shell">
+    <p class="eyebrow">Contact</p>
+    <h2>HAVE SOMETHING NEW THAT NEEDS TO EARN BELIEF?</h2>
+    <p class="lede">I'm open to Campaign Marketer opportunities in Hanoi and Singapore, as well as selected project collaborations.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="mailto:linhnhk514@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="assets/Kaylin-Ngo-Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+    <dl class="contact-grid">
+      <div><dt>Email</dt><dd><a href="mailto:linhnhk514@gmail.com">linhnhk514@gmail.com</a></dd></div>
+      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/hoang-khanh-linh-ngo-514933215/" target="_blank" rel="noopener">Kaylin Ngo</a></dd></div>
+      <div><dt>Location</dt><dd>Hanoi, Vietnam</dd></div>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="shell">© 2026 Ngô Hoàng Khánh Linh (Kaylin Ngo) · Campaign Marketer · Hanoi</div>
+</footer>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal on-dark">
+    <div class="modal-bar">
+      <span class="who" id="modal-slug"></span>
+      <button class="x" id="close-btn" type="button">Close ✕</button>
+    </div>
+    <div class="modal-in" id="modal-in"></div>
+  </div>
+</div>
+
+<script>
+const CASES = [
+  {
+    id: "case-01",
+    num: "01",
+    kind: "Campaign Strategy",
+    title: "READY, SET, GO!",
+    client: "Sphinx S-visor",
+    quote: "When an AI product has to earn trust before it can earn adoption.",
+    meta: "Sphinx Joint Stock Company · Lead Content Marketing Specialist · Sep 2025 – Present",
+    tags: ["Campaign Planning", "IMC", "Brand Storytelling", "PR and Media Writing", "Lead Generation"],
+    cover: { file: "assets/01-cover.jpg", alt: "The S-visor team at their exhibition booth" },
+    teaser: "250+ leads from a 3-phase IMC campaign for an AI product with no paid media budget.",
+    problem: "S-visor was entering the market with no paid media budget, and enterprise buyers were already skeptical — questioning cost, proof-of-concept risk, and who would own the intellectual property.",
+    approach: "I made those objections the starting point rather than an obstacle to work around, and built a 3-phase IMC strategy — Ready, Set, Go — that moved prospects from skepticism to understanding to consultation.",
+    did: [
+      "Developed bilingual Facebook content addressing each key objection.",
+      "Wrote and produced the Learn on TikTok script series.",
+      "Designed event frameworks and consultation funnels used at TechFest Vietnam and AI360.",
+      "Connected content, PR, events, and lead generation into one campaign journey.",
+      "Built the marketing SOPs and automated campaign workflows behind it in Make.com."
+    ],
+    video: { id: "E7Fm6TxSRv0", url: "https://youtu.be/E7Fm6TxSRv0", label: "The finished video",
+      cap: "<b>Episode one of the Learn on TikTok series.</b> The script on the left, produced — written to a hook, one technical idea, one business consequence, then cut to length. <a href=\'https://youtu.be/E7Fm6TxSRv0\' target=\'_blank\' rel=\'noopener\'>Watch on YouTube ↗</a>" },
+    impactN: "250+ LEADS",
+    impact: "Generated with zero paid spend at TechFest Vietnam and AI360 — proof that content built around real objections can do the work a media budget usually does. Coverage followed in Kinh tế và Tài chính, a Vietnamese economics and finance outlet.",
+    signoff: "From skepticism to consultation.",
+    evidence: [
+      { file: "assets/01-imc-plan.png", alt: "The three-phase IMC campaign plan", cap: "<b>The campaign plan.</b> Three phases — Ready, Set, Go — each answering one objection enterprise buyers had raised. Every asset below was built from this page." },
+      { file: "assets/01-facebook-series.png", alt: "A second format from the Facebook content series", cap: "<b>Three formats, one argument.</b> Image-led, text-led and long-form versions of the same case, so it reached people who skim and people who read." },
+      { file: "assets/01-tiktok-script.png", alt: "Script document from the Learn on TikTok series", cap: "<b>A script from the Learn on TikTok series.</b> Written to a fixed shape — hook, one technical idea, one business consequence — so the series could scale without losing technical accuracy." },
+      { file: "assets/01-pr.jpg", alt: "Press coverage in the Vietnamese finance publication Kinh te va Tai chinh", cap: "<b>Press coverage in Kinh tế và Tài chính, a Vietnamese national economics and finance title.</b> Earned, not paid — the kind of credibility a campaign with no media budget cannot buy." }
+    ],
+    links: []
+  },
+  {
+    id: "case-02",
+    num: "02",
+    kind: "B2B Campaign and Event",
+    title: "UNLOCK GROWTH WITH AI",
+    client: "NetVietTV",
+    quote: "When an event needs to generate pipeline, not just attendance.",
+    meta: "NetVietTV · Mở Khóa Tăng Trưởng Cùng AI event series · Campaign Lead · Mar – May 2026 · 2 editions",
+    tags: ["Campaign Planning", "Audience Journey", "Event Operations", "Budget Management"],
+    cover: { file: "assets/02-cover.jpg", alt: "NetVietTV", logo: true, bg: "#FFFFFF" },
+    teaser: "64% of the room converted into pipeline, across two editions of a B2B series.",
+    problem: "NetVietTV's B2B event series had no existing audience and no acquisition funnel — 30 seats to fill with CEOs and founders, built from nothing, then the whole format repeated online for a different audience a month later.",
+    approach: "I treated the event as one stage in a longer acquisition journey, not a standalone gathering. That meant building the funnel first, then designing the event around the action I wanted attendees to take afterward.",
+    did: [
+      "Built the acquisition funnel and three campaign landing pages.",
+      "Developed the event script and KPI framework.",
+      "Designed the attendee journey from registration to follow-up.",
+      "Managed the budget end-to-end.",
+      "Coordinated campaign execution across channels.",
+      "Wrote the event masterplan — task tracker, run of show, KPI funnel and risk register — and reused it for the second edition.",
+      "Ran the format twice: a 30-seat offline event for CEOs in March, then a 100-person online webinar for agency owners in April."
+    ],
+    impactN: "14 OF 22 INTO PIPELINE",
+    impact: "27 of 30 seats filled, 22 in the room on the day, and 14 of them — 64% — moved into the pipeline: 1 signed onsite, 3 converted within a week, and 10 in active negotiation. Proof the funnel kept working after the room emptied, not just during it.",
+    signoff: "From registration to pipeline.",
+    evidence: [],
+    sites: [
+      { url: "https://ai-growth-unlocked.lovable.app/", host: "ai-growth-unlocked.lovable.app", file: "assets/02-landing-2.png", alt: "Unlock Growth With AI event landing page", cap: "<b>The event page.</b> Free entry, 30 seats, Hanoi, 4 April 2026. Naming the cap up front turned a limit into a filter — the people who registered were the ones who wanted the room." },
+      { url: "https://khai-xuan-ai-boost.lovable.app/", host: "khai-xuan-ai-boost.lovable.app", file: "assets/02-landing-1.png", alt: "Khai Xuân AI Boost landing page", cap: "<b>Wave one of the funnel.</b> Each campaign wave had its own page and registration path, so I could see which message filled seats rather than guessing at the end." },
+      { url: "https://ai-marketer-partnership.lovable.app/", host: "ai-marketer-partnership.lovable.app", file: "assets/02-landing-3.png", alt: "AI Marketer Partnership landing page", cap: "<b>The partner track.</b> Agencies were a different audience with a different offer, so they got their own page rather than a shared one." }
+    ],
+    links: []
+  },
+  {
+    id: "case-03",
+    num: "03",
+    kind: "Executive Event",
+    title: "VADA CXO MIXER",
+    client: "VADA",
+    quote: "When communication, staffing, and event operations have to work as one.",
+    meta: "VADA · Brand Marketing Assistant · Feb – Mar 2025",
+    tags: ["Internal Communications", "Event Planning", "Event Operations", "Onsite Lead", "MC"],
+    cover: null,
+    teaser: "25 C-suite executives through three concurrent sessions, zero handoff gaps.",
+    problem: "A full-day event for 25 C-suite executives meant three things had to move at once — internal communications, staffing, and onsite execution — with no room for a handoff to go wrong.",
+    approach: "I owned every operational thread myself, from internal communications and staff recruitment through to onsite delivery, so nothing could fall through the cracks between planning and the room actually filling up.",
+    did: [
+      "Planned phase-by-phase internal communications across Workplace, LinkedIn, and email.",
+      "Wrote the volunteer job description, then recruited and trained event staff.",
+      "Served as Onsite Lead and MC across the Pickleball, Onsen, and Roundtable sessions.",
+      "Coordinated 5 event supporters against a single run of show."
+    ],
+    impactN: "25 EXECUTIVES, ON SCHEDULE",
+    impact: "All 25 executives moved through three concurrent sessions on time, with 5 supporters coordinated across Pickleball, Onsen, and Roundtable, and zero handoff gaps between planning and delivery.",
+    signoff: "From planning to seamless delivery.",
+    also: "Also: event operations at other scales — booth logistics at Tâm Châu and S-visor trade fairs, campus-wide events as Executive Secretary of Swinburne Event Club, and guest reception for 500+ at Taste of the World.",
+    evidence: [
+      { file: "assets/03-comms-plan.png", alt: "Phased internal communications plan", cap: "<b>Internal communications plan.</b> The audience to convince first was internal: what each group needed to know, on which channel, in which week, before invitations went out." },
+      { file: "assets/03-run-of-show.png", alt: "Onsite run of show for the CxO Mixer", cap: "<b>The run of show.</b> Three sessions running at once — pickleball, onsen and a roundtable — on one timeline, with each supporter's position written against it." },
+      { file: "assets/03-internal-post.png", alt: "Internal announcement post", cap: "<b>Internal announcement.</b> The same message reshaped for Workplace, LinkedIn and email rather than copy-pasted across all three, because people read those three places in different modes." }
+    ],
+    links: []
+  },
+  {
+    id: "case-04",
+    num: "04",
+    kind: "Organic Growth",
+    title: "TEEDEE",
+    client: "TeeDee",
+    quote: "When attention needs to become a relationship.",
+    meta: "TeeDee · Campaign Lead, part-time · Jul 2026 – Present",
+    tags: ["Content Strategy", "Copywriting", "Social Media", "Community Management"],
+    cover: { file: "assets/04-cover.jpg", alt: "TeeDee Corner", logo: true, bg: "#F7EAD9" },
+    teaser: "319.7K views and 250 new contacts in 28 days, zero ad spend.",
+    problem: "A new B2C page had to grow from zero with no paid media. The harder part was turning that attention into real customer conversations, not just views.",
+    approach: "I treated community management as part of the growth strategy itself, not a support function bolted on afterward — every reply was a second chance at reach.",
+    did: [
+      "Built the content strategy and publishing cadence.",
+      "Created the content calendar, then ideated and wrote every post.",
+      "Managed audience replies and customer conversations.",
+      "Used those conversations as a second layer of organic growth."
+    ],
+    impactN: "319.7K VIEWS IN 28 DAYS",
+    impact: "79.2% of that reach came from people who didn't already follow the page — proof the growth came from the content itself, not the existing audience. It turned into 613 interactions, 392 customer conversations and 250 new customer contacts, with replies landing within the hour 91.7% of the time. The page also gained 104 new followers, 95 net after unfollows.",
+    signoff: "From reach to relationships.",
+    evidence: [
+      { file: "assets/04-insights.png", alt: "Meta Business Suite analytics for the first 28 days", cap: "<b>Meta Business Suite, first 28 days.</b> Reach, share of views from non-followers, interactions and reply speed, uncropped, so the numbers can be checked rather than taken on trust." },
+      { file: "assets/04-top-post.png", alt: "The best-performing TeeDee post", cap: "<b>The best-performing post.</b> It drove most of the non-follower reach, and the publishing cadence was rebuilt around the format it proved." }
+    ],
+    links: []
+  },
+  {
+    id: "case-05",
+    num: "05",
+    kind: "Brand and E-commerce",
+    title: "TÂM CHÂU",
+    client: "Tâm Châu",
+    quote: "When a traditional brand enters a new retail environment.",
+    meta: "Tâm Châu · Marketing Lead · Jan – Dec 2025",
+    tags: ["Social Strategy", "Brand Storytelling", "Design Direction", "E-commerce"],
+    cover: { file: "assets/05-cover.jpg", alt: "Tâm Châu Lunar New Year gift range key visual" },
+    teaser: "Two Shopee storefronts at 5.82% and 6.35% order conversion, zero paid media.",
+    problem: "A boutique tea brand needed to enter a saturated market with zero paid media, and stay premium and consistent everywhere at once — social, in person, and e-commerce.",
+    approach: "I built one visual and narrative identity, then applied it everywhere the brand showed up, so a customer met the same trustworthy brand whether they found it online, at a trade fair, or on Shopee.",
+    did: [
+      "Built the social identity and product storytelling.",
+      "Directed the Tết campaign visuals across the three-tier gift range.",
+      "Created trade fair backdrops, standees, and brochures.",
+      "Optimized two Shopee storefronts through search-friendly listings and store presentation.",
+      "Developed vouchers and post-purchase communication."
+    ],
+    impactN: "5.82% AND 6.35% CONVERSION",
+    impact: "Two Shopee storefronts held those order conversion rates across the year. One didn't just convert well, it pulled in far more people to convert in the first place: visits up 242.72% and product clicks up 261.12% year over year.",
+    signoff: "From brand story to retail experience.",
+    albums: [
+      { label: "Tết gift campaign",
+        files: ["assets/05-cover.jpg", "assets/05-tet-oolong-10.jpg", "assets/05-tet-oolong-9.jpg", "assets/05-tet-oolong-8.jpg"],
+        alt: "Tâm Châu Tết gift range campaign visuals",
+        cap: "<b>The Tết campaign — key visual and all three gift tiers.</b> Món Quà Nhỏ, Tấm Lòng To, a small gift with a big heart, framing a modest box as a sincere gesture, which is how this category is actually bought. One set, one lighting scheme, fixed props: colour carries the tier and each box gets its own character, so the three read as one family scrolling past and are still told apart on a shelf." }
+    ],
+    albums2: [
+      { label: "Mid-Autumn campaign",
+        files: ["assets/05-midautumn-1.jpg", "assets/05-midautumn-2.jpg"],
+        alt: "Tâm Châu Mid-Autumn gift campaign visuals",
+        cap: "<b>The same system, a different festival.</b> Mid-Autumn is the year's other gift season, so the range was reshot against gold and deep green instead of Tết red — the layout, the tier logic and the product story carried over unchanged, which is the point of building a system rather than a one-off." }
+    ],
+    evidence: [
+      { file: "assets/05-shopee-1.jpg", alt: "Tam Chau storefront on Shopee", cap: "<b>Shopee storefront.</b> Listing titles rewritten around the words customers actually search, and the shopfront rebuilt to carry the same identity as the social feed." },
+      { file: "assets/05-shopee-2.jpg", alt: "The second Tam Chau Shopee storefront", cap: "<b>The second storefront.</b> The same system applied again — doing it twice is what made it a method rather than a one-off." },
+      { file: "assets/05-shopee-data.png", alt: "Shopee seller dashboard showing conversion and traffic", cap: "<b>The Shopee seller dashboard.</b> Order conversion rate, visits and product clicks, this year against last — the source behind every number in this case." },
+      { file: "assets/05-brochure.jpg", alt: "Tam Chau trifold brochure", cap: "<b>Trifold brochure.</b> The print half of the identity, handed out at trade fairs, running the same typography and product story as the online storefront." },
+      { file: "assets/05-trade-fair.jpg", alt: "Tam Chau trade fair booth", cap: "<b>Trade fair booth.</b> Backdrop and standees built so a customer meeting the brand in person recognised the brand they had already seen on a phone." }
+    ],
+    links: []
+  },
+  {
+    id: "case-06",
+    num: "06",
+    kind: "Technical Content and PR",
+    title: "GS1 VIETNAM",
+    client: "GS1 Vietnam (STAMEQ)",
+    quote: "When technical information needs to become relevant to business audiences.",
+    meta: "GS1 Vietnam (STAMEQ) · International Cooperation Intern · May – Aug 2024",
+    tags: ["Content Strategy", "Copywriting", "PR", "Thought Leadership"],
+    cover: null,
+    teaser: "A national standards body's LinkedIn presence, built from zero.",
+    problem: "GTIN, RFID and supply-chain traceability are highly technical topics, and largely unfamiliar to the business and government audiences that most need them.",
+    approach: "I translated the standards into simple, practical communication focused on what they actually meant for a Vietnamese business — what it costs, what it prevents, what to do first.",
+    did: [
+      "Turned technical standards into clear, practical content.",
+      "Developed website and LinkedIn communication.",
+      "Launched and managed the GS1 Vietnam LinkedIn page.",
+      "Produced materials aligned with GS1 global brand guidelines.",
+      "Supported communication between international experts and Vietnamese stakeholders."
+    ],
+    impactN: "LINKEDIN PRESENCE FROM ZERO",
+    impact: "Built an official LinkedIn presence for a national standards body from nothing, plus a body of technical content that gives business and government readers a way into GTIN, RFID and traceability standards without needing an engineering background.",
+    signoff: "From technical information to business relevance.",
+    evidence: [],
+    note: "Work samples for this engagement are confidential and available on request.",
+    links: []
+  }
+];
+
+const cardsEl = document.getElementById('cards');
+const overlay = document.getElementById('overlay');
+const modalIn = document.getElementById('modal-in');
+const modalSlug = document.getElementById('modal-slug');
+const closeBtn = document.getElementById('close-btn');
+let lastFocus = null;
+
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+
+CASES.forEach(function (c) {
+  const btn = document.createElement('button');
+  btn.className = 'card';
+  btn.type = 'button';
+  btn.setAttribute('aria-haspopup', 'dialog');
+  const shot = c.cover
+    ? '<div class="card-shot' + (c.cover.logo ? ' logo' : '') + '" data-file="' + c.cover.file + '"' +
+        (c.cover.bg ? ' style="background:' + c.cover.bg + '"' : '') + '>' +
+        '<img src="' + c.cover.file + '" alt="' + esc(c.cover.alt) + '"></div>'
+    : '<div class="card-shot type-only"><span>' + esc(c.title) + '</span></div>';
+  btn.innerHTML = shot +
+    '<div class="card-body">' +
+      '<p class="eyebrow">' + c.num + ' · ' + esc(c.kind) + '</p>' +
+      '<h3>' + esc(c.title) + '</h3>' +
+      '<p class="card-desc">' + esc(c.teaser) + '</p>' +
+      '<div class="card-more">Read the case →</div>' +
+    '</div>';
+  btn.addEventListener('click', function () { open(c.id); });
+  cardsEl.appendChild(btn);
+});
+
+function siteHTML(s) {
+  return '<figure class="shot">' +
+    '<a class="sitecard" href="' + s.url + '" target="_blank" rel="noopener">' +
+      '<div class="chrome">' +
+        '<span class="dots"><i></i><i></i><i></i></span>' +
+        '<span class="url">' + esc(s.host) + '</span>' +
+        '<span class="go">↗</span>' +
+      '</div>' +
+      '<div class="frame" data-file="' + s.file + '">' +
+        '<img src="' + s.file + '" alt="' + esc(s.alt) + '" loading="lazy">' +
+      '</div>' +
+    '</a>' +
+    '<figcaption>' + s.cap + '</figcaption>' +
+  '</figure>';
+}
+
+function albumHTML(a) {
+  return '<p class="lab">' + esc(a.label) + '</p>' +
+    '<figure class="shot" style="margin-bottom:1.75rem">' +
+      '<div class="frame" data-file="' + a.files[0] + ' + ' + (a.files.length - 1) + ' more">' +
+        '<div class="album-grid">' +
+          a.files.map(function (f) {
+            return '<img src="' + f + '" alt="' + esc(a.alt) + '" loading="lazy">';
+          }).join('') +
+        '</div>' +
+      '</div>' +
+      '<figcaption>' + a.cap + '</figcaption>' +
+    '</figure>';
+}
+
+function shotHTML(ev) {
+  return '<figure class="shot">' +
+    '<div class="frame" data-file="' + ev.file + '">' +
+      '<img src="' + ev.file + '" alt="' + esc(ev.alt) + '" loading="lazy">' +
+    '</div>' +
+    '<figcaption>' + ev.cap + '</figcaption>' +
+  '</figure>';
+}
+
+function open(id) {
+  const c = CASES.find(function (x) { return x.id === id; });
+  if (!c) return;
+  lastFocus = document.activeElement;
+  modalSlug.textContent = c.num + ' · ' + c.kind;
+  modalIn.innerHTML =
+    '<h2 id="modal-title">' + esc(c.title) + '</h2>' +
+    '<p class="quote">' + esc(c.quote) + '</p>' +
+    '<div class="meta-row">' + esc(c.meta) + '</div>' +
+    '<div class="tags">' + c.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+    '<p class="lab">The problem</p><p class="txt">' + esc(c.problem) + '</p>' +
+    '<p class="lab">Approach</p><p class="txt">' + esc(c.approach) + '</p>' +
+    '<p class="lab">What I did</p><ul>' + c.did.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul>' +
+    '<div class="impact"><p class="lab">Impact</p><div class="impact-n">' + esc(c.impactN) + '</div><p>' + esc(c.impact) + '</p></div>' +
+    '<p class="signoff">' + esc(c.signoff) + '</p>' +
+    (c.also ? '<p class="txt">' + esc(c.also) + '</p>' : '') +
+    (c.albums ? c.albums.map(albumHTML).join('') : '') +
+    (c.albums2 ? c.albums2.map(albumHTML).join('') : '') +
+    (c.video ? '<p class="lab">' + esc(c.video.label) + '</p>' +
+      '<figure class="shot" style="max-width:34rem;margin-bottom:1.75rem">' +
+        '<div class="video-frame">' +
+          '<iframe src="https://www.youtube-nocookie.com/embed/' + c.video.id + '" title="' + esc(c.video.label) + '" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>' +
+        '</div>' +
+        '<figcaption>' + c.video.cap + '</figcaption>' +
+      '</figure>' : '') +
+    (c.sites && c.sites.length ? '<p class="lab">Live pages</p><div class="site-grid">' + c.sites.map(siteHTML).join('') + '</div>' : '') +
+    (c.evidence.length ? '<p class="lab" style="margin-top:1.75rem">Evidence</p><div class="ev-grid">' + c.evidence.map(shotHTML).join('') + '</div>' : '') +
+    (c.note ? '<p class="txt" style="margin-top:1.25rem">' + esc(c.note) + '</p>' : '') +
+    (c.links.length ? '<div class="links">' + c.links.map(function (l) { return '<a href="' + l.url + '" target="_blank" rel="noopener">' + esc(l.label) + ' ↗</a>'; }).join('') + '</div>' : '');
+
+  checkImages(modalIn);
+  overlay.classList.add('open');
+  document.body.classList.add('locked');
+  overlay.scrollTop = 0;
+  closeBtn.focus();
+  if (history.replaceState) history.replaceState(null, '', '#' + id);
+}
+
+function close() {
+  overlay.classList.remove('open');
+  document.body.classList.remove('locked');
+  if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+  if (lastFocus) lastFocus.focus();
+}
+
+closeBtn.addEventListener('click', close);
+overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+
+/* Any image that fails to load turns its slot into a labelled placeholder
+   naming the exact file to drop into /assets. */
+function checkImages(root) {
+  root.querySelectorAll('img').forEach(function (img) {
+    const holder = img.closest('.frame') || img.closest('.card-shot');
+    if (!holder) return;
+    const mark = function () {
+      const fig = img.closest('.shot');
+      (fig || holder).classList.add('missing');
+    };
+    if (img.complete && img.naturalWidth === 0) mark();
+    img.addEventListener('error', mark);
+  });
+}
+
+checkImages(document);
+
+const hash = location.hash.replace('#', '');
+if (hash && CASES.some(function (c) { return c.id === hash; })) open(hash);
+</script>
+
+</body>
+</html>
